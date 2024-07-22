@@ -1,0 +1,20 @@
+/* Import the pixel font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Apply the pixel font to elements */
+.pixel-font {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px; /* Adjust the size as needed */
+    color: #000; /* Text color */
+    letter-spacing: 1px; /* Space between letters */
+    line-height: 1.5; /* Space between lines */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+#user-profile h2, #bio-container p {
+    font-family: 'Press Start 2P', cursive; /* Apply pixel font to specific elements */
+}
+
+#buttons a {
+    font-family: 'Press Start 2P', cursive; /* Apply pixel font to buttons */
+}

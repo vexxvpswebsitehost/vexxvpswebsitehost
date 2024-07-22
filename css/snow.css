@@ -1,0 +1,20 @@
+/* snow.css */
+.snow-flake {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8); /* Snowflake color */
+    border-radius: 50%; /* Round shape */
+    opacity: 0.8; /* Slightly transparent */
+    pointer-events: none; /* Make sure snowflakes do not block interactions */
+    /* Animation */
+    animation: fall linear infinite;
+}
+
+/* Snowflake falling animation */
+@keyframes fall {
+    from {
+        transform: translateY(-100vh); /* Start above the viewport */
+    }
+    to {
+        transform: translateY(100vh); /* End below the viewport */
+    }
+}

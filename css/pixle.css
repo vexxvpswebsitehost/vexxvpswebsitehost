@@ -1,0 +1,19 @@
+/* Basic reset for better consistency */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace; /* Use monospace for pixel effect */
+}
+
+.pixel-text {
+    font-family: monospace;
+    font-size: 24px; /* Adjust the size as needed */
+    color: #000; /* Text color */
+    letter-spacing: 2px; /* Space between letters */
+    line-height: 1.2; /* Space between lines */
+    text-transform: uppercase; /* Convert text to uppercase */
+    background: #f0f0f0; /* Light background for better contrast */
+    padding: 10px; /* Padding around text */
+    border: 1px solid #000; /* Border to mimic a pixel effect */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for a pixelated effect */
+}

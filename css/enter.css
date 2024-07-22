@@ -1,0 +1,76 @@
+/* index.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fafafa;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Apply pixel font globally */
+}
+
+#enter-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+#enter-button {
+    font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+    font-size: 48px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#content {
+    display: none;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#bio-link {
+    position: relative;
+    z-index: 2;
+}
+
+#user-profile {
+    margin: 20px;
+}
+
+#profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#username {
+    font-size: 36px;
+    font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+}

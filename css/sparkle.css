@@ -1,0 +1,44 @@
+/* Sparkles container */
+.sparkles-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Sparkles effect behind the username */
+.sparkles-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 70%);
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    animation: sparkle 1.5s infinite ease-in-out;
+    pointer-events: none;
+    z-index: 0; /* Place behind the text */
+}
+
+/* Animation for sparkles */
+@keyframes sparkle {
+    0% {
+        opacity: 0.5;
+        transform: scale(1) translate(-50%, -50%);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5) translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
+
+/* Ensure the username text is above the sparkles */
+#username {
+    position: relative;
+    z-index: 1; /* Place text above the sparkles */
+    color: #fff; /* Text color */
+}

@@ -1,0 +1,19 @@
+button,
+a {
+    background-color: transparent; /* Make the background transparent */
+    border: 2px solid #fff; /* Add a border with a color (e.g., white) */
+    color: #fff; /* Set text color to white or any contrasting color */
+    padding: 10px 20px; /* Add padding for better appearance */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'PixelFont', sans-serif; /* Apply pixel font if needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+    transition: background-color 0.3s, border-color 0.3s; /* Add transition effects */
+}
+
+/* Add hover effect for better interactivity */
+button:hover,
+a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lightly shade background on hover */
+    border-color: #f0f0f0; /* Change border color on hover */
+}

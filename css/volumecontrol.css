@@ -1,0 +1,74 @@
+/* volume.css */
+#volume-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#volume-control label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+#volume-control input {
+    width: 80%;
+}
+
+/* Add this CSS to your existing stylesheet or a new one */
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Space above buttons */
+}
+
+.button-image {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    padding: 0; /* Remove default padding */
+    cursor: pointer; /* Show pointer cursor on hover */
+    display: flex; /* Ensure the image fits properly */
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.button-image img {
+    width: 40px; /* Set size for the button images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline spacing */
+}
+
+.button-image:hover img {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+/* Add styles for the volume control buttons */
+#volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+}
+
+#volume-control button {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #110d0d; /* Border style */
+    color: #ff0000; /* Text color */
+    padding: 5px 10px; /* Padding for buttons */
+    font-family: 'PixelFont', sans-serif; /* Pixel font */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+#volume-control button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background on hover */
+    border-color: #ff0000; /* Change border color on hover */
+}
+
+#volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
